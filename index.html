@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My Portfolio Site</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+
+<body class="shell">
+  <header>
+    <a class="logo" href="https://eu.udacity.com/" target="_blank"><img src="img/udacity.svg" alt="Udacity Logo"></a>
+    <h1>Alexander Rashkov</h1>
+    <h2>front-end ninja</h2>
+  </header>
+  <hr>
+  <main>
+    <picture class="banner">
+      <source srcset="img/programming-mobile_1x.jpg, img/programming-mobile_2x.jpg 2x" media="(max-width: 550px)">
+      <source srcset="img/programming-desktop_1x.jpg, img/programming-desktop_2x.jpg 2x">
+      <img src="img/programming-desktop_2x.jpg" alt="Programing Banner">
+    </picture>
+    <h3>Featured Work</h3>
+    <ul id="featured-work">
+      <li>
+        <p class="project-name">Pixel Art Maker</p>
+        <a href="https://github.com/fullyslick/project-pixel-art-maker-starter.git" target="_blank">
+          <picture>
+            <source srcset="img/pixelated-mobile_1x.png, img/pixelated-mobile_2x.png 2x" media="(max-width: 550px)">
+            <source srcset="img/pixelated-desktop_1x.png, img/pixelated-desktop_2x.png 2x">
+            <img src="img/pixelated-desktop_2x.png 2x" alt="Pixel Art Picture">
+          </picture>
+          <span class="project-link">https://github.com/fullyslick/project-pixel-art-maker-starter.git</span>
+        </a>
+      </li>
+      <li>
+        <p class="project-name">Image Changer</p>
+        <a href="https://github.com/fullyslick/ImageChanger.git" target="_blank">
+          <picture>
+            <source srcset="img/slider-mobile_1x.png, img/slider-mobile_2x.png 2x" media="(max-width: 550px)">
+            <source srcset="img/slider-desktop_1x.png, img/slider-desktop_2x.png 2x">
+            <img src="img/slider-desktop_2x.png 2x" alt="Pixel Art Picture">
+          </picture>
+          <span class="project-link">https://github.com/fullyslick/ImageChanger.git</span>
+        </a>
+      </li>
+      <li>
+        <p class="project-name">Responsive Menu</p>
+        <a href="https://github.com/fullyslick/ShowHideMobileMenus.git" target="_blank">
+          <picture>
+            <source srcset="img/menu-mobile_1x.png, img/menu-mobile_2x.png 2x" media="(max-width: 550px)">
+            <source srcset="img/menu-desktop_1x.png, img/menu-desktop_2x.png 2x">
+            <img src="img/menu-desktop_2x.png 2x" alt="Pixel Art Picture">
+          </picture>
+          <span class="project-link">https://github.com/fullyslick/ShowHideMobileMenus.git</span>
+        </a>
+      </li>
+    </ul>
+  </main>
+</body>
+
+</html>

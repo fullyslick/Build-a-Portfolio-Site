@@ -1,0 +1,214 @@
+/* -----------------------------------*/
+
+/* ---------->>> GLOBAL <<<-----------*/
+
+/* -----------------------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+html {
+  font-size: 100.01%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.shell {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+picture>img {
+  width: 100%;
+}
+
+/* -----------------------------------*/
+
+/* ---------->>> Fonts <<<-----------*/
+
+/* -----------------------------------*/
+
+h1, h2, p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* -----------------------------------*/
+
+/* ---------->>> Header <<<-----------*/
+
+/* -----------------------------------*/
+
+header {
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+.logo>img {
+  width: 84px;
+  float: left;
+}
+
+h1, h2 {
+  text-align: right;
+  text-transform: uppercase;
+  color: #2d3c49;
+}
+
+h1 {
+  font: 300 36px 'Open Sans', sans-serif;
+}
+
+h2 {
+  font: bold 24px 'Open Sans', sans-serif;
+}
+
+hr {
+  background: #7d97ad;
+  border: none;
+  height: 5px;
+}
+
+/* -----------------------------------*/
+
+/* ---------->>> Main <<<-----------*/
+
+/* -----------------------------------*/
+
+main {
+  padding: 40px 0;
+}
+
+h3 {
+  font: 300 28px 'Open Sans', sans-serif;
+  color: #7d97ad;
+  margin: 20px 0;
+}
+
+#featured-work {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+#featured-work>li {
+  width: 30%;
+  text-align: center;
+}
+
+.project-name, .project-link {
+  color: #2d3c49;
+}
+
+.project-name {
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+.project-link {
+  display: block;
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+
+/* Holds image of the project and link to it*/
+
+#featured-work>li>a {
+  margin: 10px 0;
+  display: block;
+  padding: 10px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#featured-work>li>a:hover {
+  background: #f8f8f8;
+  -webkit-box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+/* -----------------------------------*/
+
+/* ---------->>> Mobile <<<-----------*/
+
+/* -----------------------------------*/
+
+@media screen and (max-width: 850px) {
+  .logo>img {
+    width: 66px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  .project-name {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  main {
+    padding: 20px 0;
+  }
+  .logo {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  .logo>img {
+    display: block;
+    margin: 0 auto;
+    float: none;
+  }
+  h1,
+  h2,
+  h3 {
+    text-align: center;
+  }
+
+  h2{
+    margin-top: 20px;
+  }
+  #featured-work>li {
+    width: 100%;
+  }
+  #featured-work>li {
+    width: 100%;
+    padding: 20px;
+    margin: 10px 0;
+  }
+  #featured-work>li>a {
+    max-width: 200px;
+    border: solid 1px #e8e8e8;
+    margin: 10px auto;
+    padding: 10px 30px;
+    background: #fdfcfc;
+  }
+}
