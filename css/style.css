@@ -1,7 +1,5 @@
 /* -----------------------------------*/
-
 /* ---------->>> GLOBAL <<<-----------*/
-
 /* -----------------------------------*/
 
 * {
@@ -15,7 +13,8 @@
   box-sizing: border-box;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
@@ -38,9 +37,7 @@ picture>img {
 }
 
 /* -----------------------------------*/
-
 /* ---------->>> Fonts <<<-----------*/
-
 /* -----------------------------------*/
 
 h1, h2, p {
@@ -48,22 +45,36 @@ h1, h2, p {
 }
 
 /* -----------------------------------*/
-
 /* ---------->>> Header <<<-----------*/
-
 /* -----------------------------------*/
 
 header {
   overflow: hidden;
   padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.logo {
+  width: 20%;
 }
 
 .logo>img {
   width: 84px;
-  float: left;
 }
 
-h1, h2 {
+.headnings{
+  width: 80%;
+}
+
+h1,
+h2 {
   text-align: right;
   text-transform: uppercase;
   color: #2d3c49;
@@ -84,9 +95,7 @@ hr {
 }
 
 /* -----------------------------------*/
-
 /* ---------->>> Main <<<-----------*/
-
 /* -----------------------------------*/
 
 main {
@@ -115,7 +124,8 @@ h3 {
   text-align: center;
 }
 
-.project-name, .project-link {
+.project-name,
+.project-link {
   color: #2d3c49;
 }
 
@@ -134,7 +144,6 @@ h3 {
 }
 
 /* Holds image of the project and link to it*/
-
 #featured-work>li>a {
   margin: 10px 0;
   display: block;
@@ -152,21 +161,22 @@ h3 {
 }
 
 /* -----------------------------------*/
-
 /* ---------->>> Mobile <<<-----------*/
-
 /* -----------------------------------*/
 
 @media screen and (max-width: 850px) {
   .logo>img {
     width: 66px;
   }
+
   h1 {
     font-size: 30px;
   }
+
   h2 {
     font-size: 20px;
   }
+
   .project-name {
     font-size: 16px;
   }
@@ -176,34 +186,43 @@ h3 {
   main {
     padding: 20px 0;
   }
+
   .logo {
     display: block;
     width: 100%;
     overflow: hidden;
     margin-bottom: 20px;
   }
+
   .logo>img {
     display: block;
     margin: 0 auto;
-    float: none;
   }
+
+  .headnings{
+    width: 100%;
+  }
+
   h1,
   h2,
   h3 {
     text-align: center;
   }
 
-  h2{
+  h2 {
     margin-top: 20px;
   }
+
   #featured-work>li {
     width: 100%;
   }
+
   #featured-work>li {
     width: 100%;
     padding: 20px;
     margin: 10px 0;
   }
+
   #featured-work>li>a {
     max-width: 200px;
     border: solid 1px #e8e8e8;
